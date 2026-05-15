@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>№ 001 · Anglerfish — ABYSS // depth-log</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0e14'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' fill='%236fd8d3' text-anchor='middle' font-weight='600'%3E∇%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="left"><a href="index.html" class="brand"><span class="dot"></span>ABYSS // depth-log</a></div>
+  <div class="center">SPECIMEN LOG · № 001</div>
+  <div class="right">
+    <nav class="nav" style="display:flex; gap:1.2rem;">
+      <a href="index.html#zones">ZONES</a>
+      <a href="index.html#specimens">SPECIMENS</a>
+      <a href="index.html#data">DATA</a>
+      <a href="index.html">← INDEX</a>
+    </nav>
+  </div>
+</header>
+
+<section class="specimen-detail">
+  <aside class="depth-scale">
+    <div class="tick">0 m</div>
+    <div class="tick">500</div>
+    <div class="tick major">1000</div>
+    <div class="tick major">2000</div>
+    <div class="tick major">3000</div>
+    <div class="tick">3500</div>
+    <div class="tick">−4000 m</div>
+  </aside>
+
+  <div class="detail-grid">
+    <figure class="detail-art">
+      <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="lureGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffb547" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#ffb547" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="bodyG" cx="40%" cy="40%" r="80%">
+            <stop offset="0%" stop-color="#1a212c"/>
+            <stop offset="100%" stop-color="#050810"/>
+          </radialGradient>
+        </defs>
+
+        <!-- background tinge -->
+        <circle cx="120" cy="120" r="70" fill="url(#lureGlow)" opacity="0.7"/>
+
+        <!-- Body -->
+        <path d="M 200 250
+                 Q 240 170, 320 210
+                 Q 365 230, 365 270
+                 Q 360 320, 320 330
+                 Q 240 345, 200 285
+                 Q 175 305, 155 290
+                 Q 170 270, 170 260
+                 Q 170 245, 155 220
+                 Q 175 215, 200 250 Z"
+              fill="url(#bodyG)"
+              stroke="#6fd8d3" stroke-width="1" opacity="0.95"/>
+
+        <!-- Mouth slit -->
+        <path d="M 200 275 Q 235 295, 290 285" stroke="#6fd8d3" stroke-width="1.2" fill="none"/>
+
+        <!-- Teeth -->
+        <g stroke="#e8e6df" stroke-width="0.8">
+          <line x1="215" y1="277" x2="217" y2="290"/>
+          <line x1="225" y1="283" x2="227" y2="295"/>
+          <line x1="240" y1="287" x2="240" y2="298"/>
+          <line x1="255" y1="288" x2="253" y2="298"/>
+          <line x1="270" y1="287" x2="266" y2="297"/>
+          <line x1="282" y1="285" x2="278" y2="294"/>
+          <line x1="220" y1="270" x2="222" y2="258"/>
+          <line x1="235" y1="266" x2="236" y2="254"/>
+          <line x1="252" y1="266" x2="250" y2="254"/>
+          <line x1="268" y1="268" x2="265" y2="256"/>
+          <line x1="282" y1="271" x2="278" y2="259"/>
+        </g>
+
+        <!-- Eye -->
+        <circle cx="310" cy="250" r="4" fill="#6fd8d3"/>
+        <circle cx="311" cy="249" r="1" fill="#fff"/>
+
+        <!-- Lure stalk -->
+        <path d="M 280 220 Q 230 170, 125 120" stroke="#6fd8d3" stroke-width="1.5" fill="none"/>
+        <circle cx="120" cy="120" r="14" fill="#ffb547" opacity="0.95"/>
+        <circle cx="118" cy="118" r="5" fill="#fff"/>
+
+        <!-- Fins -->
+        <path d="M 260 220 L 250 175 L 275 200 Z" fill="#11161f" stroke="#6fd8d3" stroke-width="0.8"/>
+        <path d="M 265 335 L 250 380 L 285 350 Z" fill="#11161f" stroke="#6fd8d3" stroke-width="0.8"/>
+        <path d="M 355 265 L 395 250 L 390 285 L 395 305 L 355 290 Z" fill="#11161f" stroke="#6fd8d3" stroke-width="0.8"/>
+
+        <!-- Labels with leader lines -->
+        <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#5e5b54">
+          <text x="60" y="105">A · ESCA</text>
+          <line x1="80" y1="110" x2="115" y2="118" stroke="#5e5b54" stroke-width="0.4"/>
+
+          <text x="65" y="145">B · ILLICIUM</text>
+          <line x1="105" y1="143" x2="180" y2="170" stroke="#5e5b54" stroke-width="0.4"/>
+
+          <text x="320" y="245">C · OCULUS</text>
+          <line x1="318" y1="245" x2="313" y2="250" stroke="#5e5b54" stroke-width="0.4"/>
+
+          <text x="200" y="420">D · DORSAL FIN</text>
+          <line x1="225" y1="415" x2="262" y2="385" stroke="#5e5b54" stroke-width="0.4"/>
+
+          <text x="125" y="395">E · MAXILLA (180°)</text>
+          <line x1="175" y1="390" x2="225" y2="295" stroke="#5e5b54" stroke-width="0.4"/>
+        </g>
+
+        <!-- Scale bar -->
+        <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#5e5b54">
+          <line x1="30" y1="465" x2="130" y2="465" stroke="#5e5b54" stroke-width="1"/>
+          <line x1="30" y1="460" x2="30" y2="470" stroke="#5e5b54"/>
+          <line x1="80" y1="460" x2="80" y2="470" stroke="#5e5b54"/>
+          <line x1="130" y1="460" x2="130" y2="470" stroke="#5e5b54"/>
+          <text x="80" y="482" text-anchor="middle">10 cm</text>
+        </g>
+      </svg>
+
+      <div class="scale">
+        <span>11.3°N</span>
+        <span>SPECIMEN 001</span>
+        <span>142.2°E</span>
+      </div>
+    </figure>
+
+    <div>
+      <div class="detail-meta">LOG № 001 · BATHYPELAGIC · DATA DEFICIENT</div>
+      <h1 class="detail-title"><i>Anglerfish</i></h1>
+      <div class="detail-sci">Melanocetus johnsonii · Black seadevil · 1864</div>
+
+      <div class="detail-body">
+
+        <p>The anglerfish is what happens when biology gives up on subtlety. Everything about it is functional and almost nothing about it is gentle. The body is a sack. The mouth is most of the body. The teeth fold inward, so anything that enters cannot leave. Above the head, growing out of the skull like an antenna, hangs a single thread tipped with a glowing lure.</p>
+
+        <p>The lure is not a metaphor. It is a glandular pouch full of symbiotic bacteria. The fish does not produce the light — it farms it. In exchange for shelter and nutrients, the bacteria emit a steady cold glow at roughly 490 nanometers — the exact wavelength that travels furthest through seawater. Below 1,000 m, this glow is the only light there is.</p>
+
+        <h2>Habitat</h2>
+
+        <p>The bathypelagic zone, between 1,000 and 4,000 m below the surface. Permanent darkness. Water near freezing. Pressure between one hundred and four hundred atmospheres. Most of what we have learned about the anglerfish has come from specimens hauled up by trawls — the bodies depressurize on the way to the surface and arrive misshapen, eyes burst, organs displaced. We have almost no footage of one alive in its element.</p>
+
+        <div class="detail-callout">
+          A 2014 ROV dive by MBARI captured the first verified video of a free-swimming female Black Seadevil. The recording is 24 seconds long. It has been watched, in total, more times than any anglerfish has ever been seen by human eyes.
+        </div>
+
+        <h2>Sexual Dimorphism</h2>
+
+        <p>The most discussed fact about the anglerfish, and the most misunderstood. The fish in every photograph is a female. Males are roughly the size of a thumb, lack a lure, lack a stomach, and exist for one purpose. When a male encounters a female — once, possibly the only one he will ever encounter in the dark — he bites her belly. His mouth dissolves. Her tissue grows around his head. Their circulatory systems merge.</p>
+
+        <p>The male then loses his eyes, his fins, and most of his organs. He becomes a parasitic appendage that produces sperm on demand for the rest of the female's life. A single female has been observed with up to six males fused to her body, like ornaments.</p>
+
+        <p>This is not a horror story. It is an evolutionary answer to a problem: how do you find a mate in a habitat with the population density of one fish per cubic kilometre? You don't. You merge with the first one you find.</p>
+
+        <h2>What we don't know</h2>
+
+        <p>How long an anglerfish lives. How often it eats. Whether it migrates, even slowly. Whether it sleeps. Whether the lure ever goes dark. Whether the females speak to each other through some chemical signal across the kilometres of empty water between them.</p>
+
+        <p>The bathypelagic zone is the largest single habitat on the planet. We have visited it in person fewer than thirty times. Most of what is true about the anglerfish is still true only because we have not yet had the chance to be wrong about it.</p>
+
+        <h2>Sources</h2>
+
+        <p>Pietsch, T.W. (2009). <i>Oceanic Anglerfishes: Extraordinary Diversity in the Deep Sea</i>. UC Press. · MBARI Deep-Sea Guide (2014–). · NOAA Ocean Exploration archive, dive transcripts from R/V Okeanos Explorer.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="grid">
+    <div>
+      <div class="seal"><i>ABYSS // depth-log</i></div>
+      <p style="margin-top: 1rem; max-width: 28rem; line-height: 1.7;">An ongoing archive of the world's pelagic zones. Drawn from open marine biology archives.</p>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="index.html#zones">Zones</a></li>
+        <li><a href="index.html#specimens">Specimens</a></li>
+        <li><a href="index.html#data">Telemetry</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Adjacent logs</h4>
+      <ul>
+        <li><a href="specimen.html">№ 002 · Vampire Squid</a></li>
+        <li><a href="specimen.html">№ 003 · Giant Isopod</a></li>
+        <li><a href="specimen.html">№ 004 · Dumbo Octopus</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Build</h4>
+      <ul>
+        <li>Static HTML / CSS</li>
+        <li>No tracking</li>
+        <li>No JS frameworks</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">
+    <div>© 2026 ABYSS // depth-log · No data is owned.</div>
+    <div>BUILD 04.0.3 · STATIC</div>
+  </div>
+</footer>
+
+<div class="depth-indicator" id="depth-indicator">
+  <div class="value">000</div>
+  <div>m below surface</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
